@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+
+    <title>hang man game</title>
+</head>
+<body>
+<!-- _____________________________________________________ -->
+             <!-- start hang man game -->
+<!-- _____________________________________________________ -->
+
+<div class="container">
+
+
+<div class="game-info">
+    <div class="game-name">
+     <b> Hangman Game </b>
+    </div>
+    <div class="wrongs"><b> Wrong : <span id="count-wrong">0</span></b></div>
+    <div class="category">
+    <b> Word From: </b><span></span>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="hangman-draw">
+        <div class="the-draw">
+            <div class="the-stand"></div>
+            <div class="the-hang"></div>
+            <div class="the-rope"></div>
+            <div class="the-man">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="hands"></div>
+                <div class="legs"></div>
+            </div>
+        </div>
+    </div>
+    <div class="letters"></div>
+    
+</div>
+<hr>
+<div class="letters-guess"></div><button id="again">Play Again</button>
+</div>
+<audio src="./audio/over.mp3" preload="auto" id="fail"></audio>
+<audio src="./audio/win.mp3" preload="auto" id="success"></audio>
+
+<!-- _____________________________________________________ -->
+             <!-- end hang man game  -->
+<!-- ____________________________________________________ -->
+    <!-- start java script -->
+    <script src="./js/main.js"></script>
+    <!-- end java script -->
+</body>
+</html>
